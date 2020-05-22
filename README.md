@@ -1,2 +1,2 @@
 # first_repository
-It is my first repository
+2020.05.22 깃허브 입문
