@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  </head>
+  <body>
+    <p> 6시 42분 </p>
+    <script type='text/javascript'>
+      Kakao.init('953c1c7045ad8e143f120b3a8b29e8f4');
+      Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '디저트 사진',
+          description: '아메리카노, 빵, 케익',
+          imageUrl:
+            'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            androidExecParams: 'test',
+          },
+        },
+        social: {
+          likeCount: 10,
+          commentCount: 20,
+          sharedCount: 30,
+        },
+        buttons: [
+          {
+            title: '웹으로 이동',
+            link: {
+              mobileWebUrl: 'https://developers.kakao.com',
+            },
+          },
+          {
+            title: '앱으로 이동',
+            link: {
+              mobileWebUrl: 'https://developers.kakao.com',
+            },
+          },
+        ],
+        success: function(response) {
+          console.log(response);
+        },
+        fail: function(error) {
+          console.log(error);
+        }
+      });
+    </script>
+  </body>
+</html>
