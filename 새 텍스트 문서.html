@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+<title>타이틀</title>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<a id="kakao-link-btn" href="javascript:;">
+<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+</a>
+<script type='text/javascript'>
+  //<![CDATA[
+    Kakao.init('4d5cbc15d52aafd3e37433a1827215a4');
+
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'feed',
+      content: {
+        title: '대제목',
+        description: '소제목',
+        imageUrl: 'https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/18268451_1916410595240836_2720356237197565512_n.jpg?_nc_cat=101&_nc_sid=da1649&_nc_ohc=RWKOcQvCPZ4AX_KlKad&_nc_ht=scontent-ssn1-1.xx&oh=3f6271a5b946fcf4e95824107e3a05e1&oe=5EED9D31',
+        link: {
+          mobileWebUrl: 'https://heroesofthestorm.com/ko-kr/',
+          webUrl: 'https://heroesofthestorm.com/ko-kr/'
+        }
+      },
+      buttons: [
+        {
+          title: '버튼 타이틀',
+          link: {
+            mobileWebUrl: 'https://heroesofthestorm.com/ko-kr/',
+            webUrl: 'https://heroesofthestorm.com/ko-kr/'
+          }
+        }
+      ]
+    });
+  //]]>
+</script>
+</body>
+</html>
